@@ -51,9 +51,11 @@ class Game
     puts "Au tour de #{player_name} de jouer !"
     puts "#{player_name} joue avec les #{player_symbol}"
     puts
+    sleep(1)
     puts "Voici la grille :"
     Show.new.show_board(@@board)
-
+    sleep(1)
+    
     loop do #On demande à l'utilisateur quelle case il veut remplir.
       puts "Où veux-tu jouer ?"
       @@board.grid.each_with_index do |element, index|

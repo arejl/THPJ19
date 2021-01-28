@@ -1,5 +1,7 @@
-require 'pry'
-require 'lolize/auto'
-require_relative 'lib/application'
+require 'bundler'
+Bundler.require
+
+$:.unshift File.expand_path("./../lib", __FILE__)
+require 'application'
 
 Application.new.perform

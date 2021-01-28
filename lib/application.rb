@@ -1,4 +1,5 @@
 require 'pry'
+require 'lolize/auto'
 require_relative 'game'
 require_relative 'player'
 
@@ -27,6 +28,8 @@ class Application
 
     @@players.each {|player| puts "#{player.name} joue avec les #{player.symbol}."}
     puts "C'est parti !"
+
+    sleep(1)
 
     @@game = Game.new(@@players)
   end
