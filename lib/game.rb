@@ -15,6 +15,8 @@ class Game
   def is_still_ongoing?
 
     control = 0 #Cette variable calcule le nombre de cases vides.
+    @@winner = nil #Cette variable va enregistrer le symbole du gagnant.
+
     @@board.grid.each do |boardcase|
       if boardcase.content == " "
         control += 1
