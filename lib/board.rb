@@ -2,7 +2,7 @@ require 'pry'
 require_relative 'boardcase'
 
 class Board
-  attr_accessor :grid, :line1, :line2, :line3, :vertical1, :vertical2, :vertical3, :diagonal1, :diagonal2
+  attr_reader :grid, :line1, :line2, :line3, :vertical1, :vertical2, :vertical3, :diagonal1, :diagonal2
   def initialize
 
     #On crée des cases individuelles (Boardcase) en leur attribuant un emplacement.
